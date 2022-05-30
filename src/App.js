@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./styles.css";
+import Naslovna from "./Naslovna.js";
+import Igraci from "./Igraci";
+import Roditelj from "./Roditelj";
+import Povijest from "./Povijest";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import Pretplata from "./Pretplata.js";
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Naslovna />}></Route>
+
+          <Route path="/roditelj" element={<Roditelj />}></Route>
+          <Route path="/igraci" element={<Igraci />}></Route>
+          <Route path="/povijest" element={<Povijest />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
-
-export default App;

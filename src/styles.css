@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+.App {
+}
+.Naslovna {
+}
+.Menu {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 22px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.txt {
+  text-decoration: none;
+
+  color: #54b3d6;
+  font-size: 20px;
+  padding: 35px;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  transition: color 1.5s ease-in, box-shadow 0.5s ease-in-out;
+  font-family: "Poiret One", cursive;
+  font-weight: bolder;
+}
+.linkovi {
+  text-align: center;
+}
+
+.txt:hover {
+  color: #0a3b74;
+
+  font-size: 20px;
+  height: 2px;
+}
+.awesome {
+  width: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-top: 16px;
+  padding-left: 100px;
+  color: #313131;
+  font-size: 45px;
+  font-weight: bold;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: blue;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: white;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: white;
+  }
+  90% {
+    color: #2980b9;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.sponzori {
+  position: absolute;
+  width: 60%;
+  height: 200px;
+
+  bottom: 0px;
+  right: 20%;
+}
+.poljud {
+  width: 35%;
+  height: 15%;
+  margin-top: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* (A) WRAPPER */
+.fullwrap {
+  position: relative; /* required for (c2) */
+  max-width: 500px; /* optional */
+  margin-top: -60px;
+}
+
+/* (B) RESPONSIVE IMAGE */
+.fullwrap img {
+  width: 100%;
+}
+
+/* (C) CAPTION */
+.fullcap {
+  /* (C1) DIMENSIONS */
+  box-sizing: border-box;
+  width: 100%;
+  height: 90%;
+
+  /* (C2) POSITION */
+  position: absolute;
+  top: 24px;
+  left: 0;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30%;
+
+  /* (C3) COLORS */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+/* (D) SHOW/HIDE */
+.fullcap {
+  visibility: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.fullwrap:hover .fullcap {
+  visibility: visible;
+  opacity: 1;
+}
+.posebno {
+  margin-top: -42px;
+  font-family: "Indie Flower", cursive;
+  font-family: "Koulen", cursive;
+  font-size: 30px;
+}
+.logo {
+  position: absolute;
+  width: 70px;
+  margin-top: -17px;
+}
+.mali {
+  position: absolute;
+  padding-left: 85px;
+  margin-top: 8px;
+  font-size: 17px;
+  font-family: "Trebuchet MS", sans-serif;
+  color: blue;
+}
+.mali:hover {
+  color: red;
+}
+
+.pretp {
+  margin-top: 20px;
+}
+
+.livaja {
+}
+.slija {
+  float: right;
+  width: 400px;
+}
+.slija:hover {
+  transform: scale(1.04);
+  transition: 600ms;
+}
+.tekstic {
+  color: red;
+  position: absolute;
+  margin-left: 1250px;
+  margin-top: 250px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #2980b9;
+}
+.slicica {
+  position: absolute;
+  width: 250px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.slicica:hover {
+  transform: scale(1.04);
+  transition: 600ms;
+}
+.dambra {
+  position: absolute;
+  color: #2980b9;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  margin-left: 580px;
+  margin-top: 150px;
+}
+.dinamo {
+  position: absolute;
+  margin-left: 830px;
+  color: red;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-top: -55px;
+}
+.pretp:hover {
+  transform: scale(1.04);
+  transition: 600ms;
+}
+.iskaznica {
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: -350px;
+  width: 450px;
+  height: 250px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.nasl {
+  position: absolute;
+  margin-top: -450px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 1200px;
+  color: darkblue;
+}
+.mslika {
+  height: 160px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+.polje {
+  position: absolute;
+  margin-top: -155px;
+  margin-left: 200px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 12px;
+}
+.sjever {
+  font-family: "Trebuchet MS", sans-serif;
+  color: darkblue;
+  margin-left: 250px;
+}
+.video {
+  margin-left: 50px;
+}
+.pov {
+}
+.tekstohaj {
+  width: 500px;
+  position: absolute;
+  margin-top: 46px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.state {
+  position: absolute;
+  margin-top: 550px;
+}
+.drugidiv {
+  width: 500px;
+  padding-top: 45px;
+  margin: 0 auto;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.trecidiv {
+  width: 500px;
+  margin-top: -240px;
+  float: right;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.pov2 {
+  margin-top: 25px;
+}
+.sponzorii {
+  position: absolute;
+  width: 60%;
+  height: 200px;
+
+  bottom: -500px;
+  right: 20%;
+}
+
+.state {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.spisak {
+  position: absolute;
+  margin-top: 500px;
+  font-family: "Poiret One", cursive;
+  font-weight: bolder;
+}
+
+.botun {
+  height: 30px;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 10px;
+}
+.heder {
+  float: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: blue;
+
+  font-size: 20px;
+}
+.futer {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+}
+.suba {
+  height: 250px;
+  margin-top: 50px;
+  display: inline;
+}
+.mikanovic {
+}
+.suba:hover {
+  transform: scale(1.04);
+  transition: 600ms;
+}
+.x {
+  font-size: 25px;
+  font-family: "Bonheur Royale", cursive;
+  font-weight: bolder;
+}
+.sponzorii {
+  margin-top: 250px;
+}
